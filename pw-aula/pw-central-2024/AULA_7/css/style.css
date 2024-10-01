@@ -1,0 +1,85 @@
+@media only screen and (max-width:600px) {
+    body {
+        font-size: 10px;
+        background-color: aqua;
+        color: rgb(3, 24, 17);
+    }
+}
+@media only screen and (min-width:601px) {
+    body {
+        font-size: 30px;
+        background-color: aqua(29,164,72);
+        color: rgb(7, 247, 167);
+    }
+}
+@media print {
+    body{
+        background-color: blue;
+        font-size: 20px;
+    }
+    
+}
+/*utilizando grid*/
+
+.item{
+    background-color: blueviolet;
+    font-size: 20px;
+    margin: 2px 2px 2px 2px;
+    border-radius: 2px;
+}
+/*informa a existencia da classe container*/
+.container{
+    display: grid;
+    justify-content: center;
+    border: 5px solid;
+}
+
+.container_col{
+    margin-top: 5px;
+    display: grid;
+    border: 5px solid;
+    grid-template-columns:50% 50% ;
+
+}
+.container_col-fix{
+    margin-top: 5px;
+    display: grid;
+    border: 5px solid;
+    grid-template-columns:33% 33% 33% ;
+
+}
+.container_col-din{
+    margin-top: 5px;
+    display: grid;
+    border: 5px solid;
+    grid-template-columns: 200px 1fr ;
+
+}
+.container_col-row{
+    margin-top: 5px;
+    display: grid;
+    border: 5px solid;
+    grid-template-columns: 200px 1fr ;
+    grid-template-rows: 300px 200px;
+
+}
+.header{
+    grid-area: header;
+}
+.sidenav{
+    grid-area: sidenav;
+}
+.content{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+.container_1{
+    margin-top: 5px;
+    display: grid;
+    border: 5px solid;
+    grid-template-columns: 200px 1fr ;
+    grid-template-rows: 300px 200px;
+
+}
