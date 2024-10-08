@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matricula de alunos app</title>
+    <style>@import url('css3/style.css');</style>
+</head>
+<body>
+    <div id="container">
+        <h1>Matrícula dos alunos</h1>
+        <form id="matriculaform">
+            <div class="form-group">
+                <label> Nome Completo</label>
+                <input type="text" id="txt_nome" required>
+            </div>
+            <div class="form-group">
+                <label for="Data Nascimento"></label>
+                <input type="date" id="txt_nasc" required>
+            </div>
+            <div class="form-group">
+                <label>GenÊro</label>
+                <select id="sel_genero" required>
+                    <option value="disabled selected">Selecione um GenÊro</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Indefinido">Prefiro não dizer</option>
+                </select>
+            </div>
+    </div>
+    <div class="form-group">
+        <label>Curso</label>
+        <select id="sel_curso" required>
+        <option value="disabled selected">Selecione um Curso</option>
+        <option value="ads">Analise e Desenvolvimento de Sistemas</option>
+        <option value="gpi">Gestão de Produção Industrial</option>
+        <option value="ge">Gestão de Processos</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="text_email" required>
+    </div>
+    <button type="submit">Enviar</button>
+</form>
+    
+</body>
+</html>
